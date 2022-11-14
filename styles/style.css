@@ -1,0 +1,283 @@
+html {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e2e4;  
+	font-size: 1rem;
+    margin: 0;
+    max-width: 1420px;	
+}
+
+header {
+    background-color: #511c4a;
+    color: #a98313;
+	padding: 20px;
+	position: sticky;
+	text-align: center; 
+	top: 0; 
+	z-index: 10;
+}
+
+.logo { 
+    color: #a98313;
+	font-size: 4em;
+	text-decoration: none;  
+}
+
+.logo:hover {
+    color:#e3de8f;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: right;
+}
+
+.navigation {
+	background-color:#edfbc1;
+	border-left:2px solid #a98313;
+	border-radius: 35% 35% 0 0;
+	border-right:2px solid #a98313;
+	border-top:2px solid #a98313;
+	color:#a98313;
+	margin: 0px 15px 0 0;
+	padding: 5px 5px 0 5px;	
+    text-decoration: none;
+}
+
+.navigation.active {
+    background-color: #511c4a;
+    color: #e3de8f;
+}
+
+.navigation:hover {
+    background-color:#a98313;
+    color:#511c4a;
+}
+
+.mobile-nav{
+	display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 		
+        "left-main right-main right-main"
+        "inspiration inspiration inspiration"
+        "moreinfo moreinfo moreinfo"
+        "deliveries deliveries deliveries";
+}
+
+.grid-item.left-main {
+	align-items: center;
+    background-color: #edfbc1;
+    border-left:2px solid #a98313;
+	border-top:2px solid #a98313;
+	border-radius: 150px 0 0 0;
+	display: flex;
+	grid-area: left-main;
+	justify-content: center;
+	padding: 10px;
+}
+
+.foto-container {
+    background-color: #511c4a;
+	border-radius: 15%;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.foto-container > img {
+	background-size: cover;
+    border-radius: 15%;
+	height: auto;
+    padding: 5px;
+    text-align: center;
+	width: 100%;
+}
+
+.grid-item.right-main {
+    background-color: #edfbc1;
+	border-right:2px solid #a98313;
+	border-top:2px solid #a98313;
+	grid-area: right-main;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.grid-item.inspiration {
+	background-color: #edfbc1; 
+	border-left:2px solid #a98313;
+	border-right:2px solid #a98313;
+	display: flex;
+	grid-area: inspiration;
+    padding: 30px;
+}
+
+.areaInspirations {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.imageInspiration {
+	width: 90%;
+	margin: auto;
+}
+
+figcaption {
+	font-size: 12px;
+    padding-left: 10px;
+}
+
+.grid-item.moreinfo {
+    background-color: #e3de8f;
+	border-left:2px solid #a98313;
+	border-right:2px solid #a98313;
+    grid-area: moreinfo;
+	padding: 100px;
+}
+
+.imgMoreInfo {
+	box-shadow: 10px 10px 3px 0 #511c4a;
+	width: 100%;
+}
+
+.grid-item.deliveries {
+    
+	border-bottom:2px solid #a98313;
+	border-left:2px solid #a98313;
+	border-right:2px solid #a98313;
+	display: grid;
+	gap: 30px;
+    grid-area: deliveries;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px;
+}
+
+.deliveries {
+	background-color: #e3de8f;
+	color: #511c4a;
+    width: 100%;
+}
+
+footer {
+    background-color: #511c4a;
+    color: #a98313;
+	padding: 20px;
+	text-align: center;  
+}
+
+@media screen and (max-width: 660px) {
+	
+	.navbar {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: block;	
+		position: fixed;
+		right: 20px;
+	}
+
+	.mobile-navContainer {
+		align-content: end;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		position: relative;
+	}
+
+	.mobile-navContainer a {
+		background-color:#e3de8f;
+		border:2px solid #a98313;
+		border-radius: 5px 0 0 5px;
+  		color: #511c4a;
+		font-size: 15px;
+		padding-left: 30px;
+		position: relative;
+		right: -150px;
+		text-decoration: none;
+		transition: 0.5s;
+  		width: 150px;
+	}
+
+	.mobile-navContainer a.homeActive {
+        background-color: #511c4a;
+		color: #a98313;
+	}
+
+	.mobile-navContainer a:hover {
+		background-color: #a98313;
+		color: #511c4a;
+		right: -2%;
+	}
+	
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: 		
+		"left-main"
+		"right-main"
+		"inspiration" 
+		"inspiration"
+		"inspiration"
+		"moreinfo"
+		"deliveries";
+	}
+
+	.grid-item.left-main {
+		border-right:2px solid #a98313;
+	}
+
+	.grid-item.right-main {
+		border-left:2px solid #a98313;
+		border-top: none;
+	}
+
+	.grid-item.inspiration {
+		flex-direction: column;
+	}
+
+	.areaInspirations {
+		padding-bottom: 15px;
+	}
+
+	.grid-item.moreinfo {
+		padding: 50px;
+	}	
+	
+	.grid-item.deliveries {
+		display: block;
+	}
+
+	}
+
+@media screen and (max-width: 485px) {
+	.logo {
+		font-size: 3em;
+	}
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cake by EMmar</title>
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+		<link rel="stylesheet" href="../styles/contact.css">
+    </head>
+    
+    <body>
+        <header>		
+            <a class="logo" href="index.html">Cake by EMmar</a>
+        </header>   
+        
+        <main>    
+		    <nav class="navbar">
+                <a class="navigation" href="index.html">HOME</a>
+                <a class="navigation" href="creations.html">CREATIONS</a>
+                <a class="navigation" href="inspirations.html">INSPIRATIONS</a>
+                <a class="navigation active" href="contact.html">CONTACT</a>
+			 </nav>
+
+             <div class="mobile-nav">
+                <div class="mobile-navContainer">
+                    <a href="index.html" class="home">HOME</a>
+                    <a href="creations.html" class="creations">CREATIONS</a>
+                    <a href="inspirations.html" class="inspirations">INSPIRATIONS</a>
+                    <a href="contact.html" class="contactActive">CONTACT</a>
+                </div>
+			 </div>
+			
+             <div class="wrap">
+                <h1>CONTACT US</h1>
+                
+                <div class="container">
+                    <section class="left-section">
+                        <img src="../fotos/basket2.jpg" alt="basket cake">
+                        <img src="../fotos/bear.jpg" alt="bear cake">
+                        <img src="../fotos/pawpatrol2.jpg" alt="dogs cake">
+                        <img src="../fotos/morereds2.jpg" alt="strawberries cake">
+                    </section>
+
+                    <section class="right-section"> 
+                        <form action="mailto:aliaga_sheila@hotmail.com" method="post" enctype="text/plain">
+                            <fieldset>
+                                <legend> GET TO KNOW YOU WITH YOUR PREFERENCES</legend>
+                        
+                                <label for="name">Name:</label>
+                                <input id="name" type="text" name="name" required><br><br>
+                        
+                                <label>E-mail:</label>
+                                <input id="email" type="email" name="email" required><br><br>
+                        
+                                <label>Mobile:</label>
+                                <input id="mobile" type="text" name="mobile" required><br><br>
+
+                                <label for="whom">To whom is the cake?</label>
+                                <select name="person">
+                                    <option value="baby-boy">Baby-boy</option>
+                                    <option value="baby-girl">Baby-girl</option>
+                                    <option value="boy">Boy</option>
+                                    <option value="girl">Girl</option>
+                                    <option value="man">Man</option>
+                                    <option value="woman">Woman</option>
+                                    <option value="other">Not need</option> 
+                                </select>
+                                    <br><br>
+                                <label>What is the occasion for?</label>
+                                <select name="celebration">
+                                    <option value="birthday">Birthday</option>
+                                    <option value="baptism">Baptism</option>
+                                    <option value="stag-party">Stag-party</option>
+                                    <option value="chicken-party">Chicken-party</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                    <br><br>
+                            
+                                <label for="allergies">Do you have any allergies?</label>
+                                <input type="checkbox" name="allergies" value="no" id="i-have-allergie" unchecked><br>
+                                <textarea id="allergies" name="which allergies" placeholder="If yes, tell me which ones."></textarea>
+                                    <br><br>
+                        
+                                <label for="day">Delivery day:</label>
+                                <input type="date" id="day" name="day">
+                                    <br><br>
+                            
+                                <label for="message" name="further information">Would you like to tell me any further information? <br>
+                                    Please feel free to write it.<br>I will contact you as soon as possible.</label>
+                                    <br><br>
+                                textarea id="message" name="further information" placeholder="What is the ocasion for, to whom is the cake, colors, likes or hobbies..."></textarea> <br>
+                                    <br>
+                        
+                                <input class="submit" type="submit" value="ORDER THE CAKE">
+                            </fieldset>
+                                <br><br>
+                        </form>
+                      
+                         <br><br>
+                    
+                    </section>
+                </div>
+            </div>
+		</main>
+		
+		<footer>
+			    &copyCake by EMmar 2022
+		</footer>
+    </body>
+</html>
