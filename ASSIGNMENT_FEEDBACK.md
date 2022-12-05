@@ -1,3 +1,9 @@
+Updated 5-12-2022
+
+Välgodkänt, jatte bra!!
+
+*************************************
+
 Hi Shiela!
 
 Nice work! I know you've been working hard on the mobile menu, and you are nearly there however it still needs a bit more work.
@@ -23,13 +29,13 @@ GODKÄNT:
 
 A header with a page title on every page: ✅
 
-A navigational menu every page with links to the other pages: ✅ ❌
+A navigational menu every page with links to the other pages: ✅ 
   Menu is not sliding out on mobile, but the links work.
   Perhaps you could wrap each menu item in a div with some left padding, so that when the user clicks on the div it slides out, revealing the actual link?
 
 Contact form:
     Email: ✅
-    Message: ❌
+    Message: ✅
     Required: ✅
     Mail to: ✅
     Where the message should be I see:
